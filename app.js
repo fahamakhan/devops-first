@@ -4,6 +4,6 @@ const app = express();
 const PORT = 8000
 
 app.listen(PORT, (error) => {
-    if (error) return LOGGER.error(error.meesage);
-    LOGGER.appStarted(PORT, host);
+    if (error) console.log(error);
+    console.log("listening");
   });
